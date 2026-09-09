@@ -99,7 +99,7 @@ def get_client():
 
 
 def get_model_name():
-    return st.secrets.get("GROK_MODEL", "llama-3.3-70b-versatile")
+    return st.secrets.get("GROK_MODEL", "openai/gpt-oss-120b")
 
 
 def chat(system: str, user: str, temperature: float = 0.2) -> str:
